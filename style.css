@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    background-color:#ecf0f1;
+    font-family: 'Raleway', sans-serif;
+}
+.first-box{
+    display: flex;
+    height:10vh;
+    background-color: black;
+    align-items: center;
+    gap: 5vw;
+
+  
+}
+.second-box{
+    height:90vh;
+    display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+.color-box{
+    display: flex;
+    height:3rem;
+    width: 18rem;
+    margin-left: 4rem;
+    border-radius: 0.2rem;
+    background-color: #636e72;
+}
+.color{
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    height:100%;
+    width:25%;
+
+}
+.color:hover{
+    background-color: rgb(100, 94, 94);
+}
+.pink{
+   
+    background-color: pink;
+
+}
+.blue{
+   
+    background-color: blue;
+   
+}
+.green{
+ 
+    background-color: green;
+}
+.black{
+  
+   
+    background-color: black;
+   
+}
+.small-box{
+    height: 40%;
+    width: 40%;
+    border-radius: 0.2rem;
+}
+.icon-box{
+    display: flex;
+    border-radius: 0.2rem;
+    height:3rem;
+    width:10rem;
+    border-radius: 0.2rem;
+    background-color: #636e72;
+
+}
+.icons{
+    border-radius: 0.2rem;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color:white
+}
+.lock{
+    color:white;
+    font-size: 1.8rem;
+}
+.icons:hover{
+    background-color: rgb(39, 37, 37);
+
+}
+/* CSS OF HIDDEN-BOX */
+.hidden-box{
+    position: absolute;
+    height:25rem;
+    width:40rem;
+    display:flex;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.75);
+    top:25vh;
+    left: calc((100vw-40rem)/2);
+
+}
+.input-box{
+    height: 100%;
+    width:75%;
+
+
+}
+.hidden-text{
+    height:100%;
+    width:100%;
+    font-size: 1.5rem;
+    line-height: 145%;
+     padding:3rem;
+     font-weight: 400;
+     outline: none;
+     font-family: 'Raleway', sans-serif;
+
+}
+.hidden-color-box{
+    height: 100%;
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #444;
+    padding: 1rem;
+
+
+}
+.hidden-color{
+    height: 2.5rem;
+    width:5rem;
+
+}
+/* CSS OF Ticket */
+.ticket-box{
+    height: 20%;
+    width:20%;
+    background-color: white;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+.upper-ticket{
+    height:8%;
+}
+.lower-ticket{
+    height:92%;
+   
+}
+.border{
+    border:solid 0.2rem white;
+}
+.uid{
+    font-size: 1rem;
+    color:grey;
+    padding:1rem
+}
+.ticket-textarea{
+    text-align: center;
+    font-size: 1.2rem;
+    overflow-y: auto;
+    outline: none;
+}
+
+@media screen and (max-width:500px) {
+    .hidden-box{
+        height:20rem;
+        width:26rem;
+        left:calc((100vw-26rem)/2);
+
+
+    }
+    .color-box{
+        margin-left: 2rem;
+    }
+    .icon-box{
+        margin-left: 2rem;
+    margin-right: 1rem;
+    }
+    .ticket-box{
+        height: 20%;
+        width:34%;
+        margin-left: 1rem;
+    }
+  }
